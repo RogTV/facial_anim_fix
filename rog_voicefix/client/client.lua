@@ -6,6 +6,11 @@ AddEventHandler("SaltyChat_TalkStateChanged", function(isTalking)   -- Change th
     staparlando = isTalking
 end)
 
+--RegisterNetEvent("rog:userTalking")
+--AddEventHandler("rog:userTalking", function(lastTalkingStatus)   -- If You're using pma-voice use this instead of "SaltyChat_TalkStateChanged". You need to add TriggerEvent("rog:userTalking",lastTalkingStatus) in pma-voice/client/init/proximity.lua/129 and it should work 
+    --staparlando = lastTalkingStatus
+--end)
+
 
 Citizen.CreateThread(function()
   RequestAnimDict('facials@gen_male@variations@normal')
